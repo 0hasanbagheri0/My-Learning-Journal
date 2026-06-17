@@ -1,0 +1,41 @@
+# محیط مجازی پایتون (Virtual Environment)
+venv/
+env/
+.env/
+.venv/
+
+# فایل‌های کامپایل شده پایتون
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# فایل‌های دیتاست حجیم (اگر دیتاست‌های بزرگ دارید)
+*.csv
+*.xlsx
+*.xls
+*.json
+*.pkl
+*.pickle
+*.h5
+*.parquet
+!sample_data/  # این خط می‌گوید فقط پوشه sample_data را استثنا کن
+
+# فایل‌های ژورنال و یادداشت‌ها (اختیاری - اگر نمی‌خواهید بفرستید)
+# *.md
+
+# ویرایشگرهای کد
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# فایل‌های سیستمی
+.DS_Store
+Thumbs.db
+
+# لاگ‌ها
+*.log
+
+# فایل‌های Jupyter Notebook (اختیاری)
+.ipynb_checkpoints/
