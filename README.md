@@ -76,7 +76,7 @@ Each day I record:
 ## 🚀 How to Use This Repository
 
 1. Clone the repository:
-   git clone https://github.com/YOUR-USERNAME/My-Learning-Journal.git
+   git clone https://github.com/0hasanbagheri0/My-Learning-Journal.git
 
 2. Navigate to the project:
    cd My-Learning-Journal
