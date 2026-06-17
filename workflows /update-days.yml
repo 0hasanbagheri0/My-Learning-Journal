@@ -1,0 +1,22 @@
+name: Update Day Counter
+
+on:
+  push:
+    paths:
+      - 'days/*.md'
+
+jobs:
+  update-counter:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Count days
+        run: |
+          COUNT=$(ls -1 days/*.md | wc -l)
+          echo "DAY_COUNT=$COUNT" >> $GITHUB_ENV
+      - name: Update README
+        run: |
+          sed -i "s/Days_Completed-[0-9]*/Days_Completed-${{ env.DAY_COUNT }}/g" README.md
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "Auto-update day counter"
