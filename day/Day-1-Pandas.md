@@ -47,7 +47,7 @@ Budget analysis reveals a maximum of 356,000,000, a minimum of 3,000, and a mean
 ## 🐛 چالشی که امروز داشتم:
 - فرق بین loc[] و iloc[] را اشتباه می‌گرفتم.
 - راه حل: loc[] برای دسترسی با اسم ستون/ردیف و iloc[] برای دسترسی با ایندکس عددی استفاده می‌شود.
-با دستورات نرم افزار گیت برای لود کردن کد ها در گیت هاب با استفاده از ترمینال اشنا شدم.
+  -با دستورات نرم افزار گیت برای لود کردن کد ها در گیت هاب با استفاده از ترمینال اشنا شدم.
 ## 🐛Today's Challenges & Learnings:
 A key challenge was differentiating between loc[] and iloc[] in pandas.
 Resolution: loc[] accesses data using row/column labels, whereas iloc[] accesses data using integer positions.
